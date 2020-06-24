@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/fondo"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <Button
+        android:id="@+id/btnfrag1"
+        style="@android:style/Widget.Holo.Light.Button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Popular" />
+
+    <Button
+        android:id="@+id/btnfrag2"
+        style="@android:style/Widget.Holo.Light.Button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="A-Z" />
+
+    <Button
+        android:id="@+id/btnano"
+        style="@android:style/Widget.Holo.Light.Button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="AÑO" />
+
+    <FrameLayout
+        android:id="@+id/contenedor"
+        android:layout_width="match_parent"
+        android:layout_height="538dp">
+
+        <TextView
+            android:id="@+id/txt1"
+            android:layout_width="match_parent"
+            android:layout_height="149dp"
+            android:gravity="center"
+            android:textColor="#0F0F72"
+            android:textSize="50dp" />
+    </FrameLayout>
+
+    <TableRow
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <Button
+            android:id="@+id/button4"
+            style="@android:style/Widget.Holo.Light.Button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="inicio" />
+
+        <Button
+            android:id="@+id/button3"
+            style="@android:style/Widget.Holo.Light.Button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="anime" />
+
+        <Button
+            android:id="@+id/button2"
+            style="@android:style/Widget.Holo.Light.Button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="manga" />
+
+        <Button
+            android:id="@+id/button5"
+            style="@android:style/Widget.Holo.Light.Button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="cuenta" />
+    </TableRow>
+
+
+</LinearLayout>

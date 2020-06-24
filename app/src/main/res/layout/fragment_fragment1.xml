@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".fragment1"
+    >
+
+    <!-- TODO: Update blank fragment layout -->
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TableLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <androidx.cardview.widget.CardView
+                        android:layout_width="426dp"
+                        android:layout_height="196dp"
+                        android:layout_marginTop="18dp"
+                        app:cardBackgroundColor="@android:color/transparent">
+
+                        <ImageView
+                            android:id="@+id/img1"
+                            android:layout_width="121dp"
+                            android:layout_height="179dp"
+                            android:layout_marginLeft="30dp"
+                            android:background="@drawable/narutoo" />
+
+                        <ImageView
+                            android:id="@+id/imag2"
+                            android:layout_width="121dp"
+                            android:layout_height="179dp"
+                            android:layout_marginLeft="175dp"
+                            android:background="@drawable/pecados" />
+
+                    </androidx.cardview.widget.CardView>
+                </TableRow>
+
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+
+                    <androidx.cardview.widget.CardView
+                        android:layout_width="426dp"
+                        android:layout_height="196dp"
+                        app:cardBackgroundColor="@android:color/transparent"
+                        android:layout_marginTop="18dp">
+
+                        <ImageView
+                            android:id="@+id/imageView1"
+                            android:layout_width="121dp"
+                            android:layout_height="179dp"
+                            android:layout_marginLeft="30dp"
+                            android:background="@drawable/boruto" />
+
+                        <ImageView
+                            android:id="@+id/imageView2"
+                            android:layout_width="121dp"
+                            android:layout_height="179dp"
+                            android:layout_marginLeft="175dp"
+                            android:background="@drawable/onepiece" />
+                    </androidx.cardview.widget.CardView>
+                </TableRow>
+
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <androidx.cardview.widget.CardView
+                        android:layout_width="426dp"
+                        android:layout_height="196dp"
+                        android:layout_marginTop="18dp"
+                        app:cardBackgroundColor="@android:color/transparent">
+
+                        <ImageView
+                            android:id="@+id/imageView3"
+                            android:layout_width="121dp"
+                            android:layout_height="179dp"
+                            android:layout_marginLeft="30dp"
+                            android:background="@drawable/ahiru" />
+
+                        <ImageView
+                            android:id="@+id/imageView4"
+                            android:layout_width="121dp"
+                            android:layout_height="179dp"
+                            android:layout_marginLeft="175dp"
+                            android:background="@drawable/black" />
+                    </androidx.cardview.widget.CardView>
+                </TableRow>
+
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent" >
+
+                    <androidx.cardview.widget.CardView
+                        android:layout_width="426dp"
+                        android:layout_height="196dp"
+                        android:layout_marginTop="18dp"
+                        app:cardBackgroundColor="@android:color/transparent">
+
+                        <ImageView
+                            android:id="@+id/imageView5"
+                            android:layout_width="121dp"
+                            android:layout_height="179dp"
+                            android:layout_marginLeft="30dp"
+                            android:background="@drawable/hero" />
+
+                        <ImageView
+                            android:id="@+id/imageView6"
+                            android:layout_width="121dp"
+                            android:layout_height="179dp"
+                            android:layout_marginLeft="175dp"
+                            android:background="@drawable/tower" />
+                    </androidx.cardview.widget.CardView>
+                </TableRow>
+            </TableLayout>
+
+        </LinearLayout>
+    </ScrollView>
+
+</FrameLayout>
