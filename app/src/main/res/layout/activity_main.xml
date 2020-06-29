@@ -23,7 +23,7 @@
         android:text="A-Z" />
 
     <Button
-        android:id="@+id/btnano"
+        android:id="@+id/btnfrag3"
         style="@android:style/Widget.Holo.Light.Button"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"

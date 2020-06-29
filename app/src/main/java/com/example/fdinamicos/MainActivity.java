@@ -2,11 +2,8 @@ package com.example.fdinamicos;
 
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
-import androidx.core.app.ActivityCompat;
 import androidx.fragment.app.FragmentTransaction;
-import android.Manifest;
-import android.content.Intent;
-import android.content.pm.PackageManager;
+
 import android.graphics.Typeface;
 import android.net.Uri;
 import android.os.Bundle;
@@ -18,7 +15,7 @@ import android.widget.TextView;
 //AGREGAR ESTA IMPLEMENTACIÓN PARA PODER TRABAJAR CON LA NAVEGACIÓN
 public class MainActivity extends AppCompatActivity implements View.OnClickListener, fragment1.OnFragmentInteractionListener,fragment2.OnFragmentInteractionListener,fragment3.OnFragmentInteractionListener{
 
-    Button btn1,btn2,ano,btn3;
+    Button btn1,btn2,btn3, btn4;
     private TextView texto1;
     private Typeface prueba;
 
@@ -34,27 +31,14 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         getSupportFragmentManager().beginTransaction().add(R.id.contenedor,frag);
         btn1=(Button)findViewById(R.id.btnfrag1);
         btn2=(Button)findViewById(R.id.btnfrag2);
-        btn3=(Button)findViewById(R.id.button4);
-        ano =(Button)findViewById(R.id.btnano);  //boton para el ano de los animes
+        btn3=(Button)findViewById(R.id.button3);
+        btn4 =(Button)findViewById(R.id.button4);
 
-//ESTE APARTADO ES PARA EL BOTON DE ORDENAR LOS ANIMES/MANGAS POR ANO DE LANZAMIENTO
-        ano=(Button)findViewById(R.id.btnano);
-        ano.setOnClickListener(new View.OnClickListener() {
+//ESTE APARTADO ES PARA EL BOTON DE ORDENAR LOS ANIMES/MANGAS POR ANO DE LANZAMIENT
+        btn4=(Button)findViewById(R.id.button4);
+        btn4.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-
-
-             //  Uri number=Uri.parse("tel:2211994272");
-             //  Intent llamar=new Intent(Intent.ACTION_DIAL,number);
-             //  startActivity(llamar);
-
-
-
-                //Intent i=new Intent(Intent.ACTION_CALL, Uri.parse("2211994272"));
-                //if(ActivityCompat.checkSelfPermission(MainActivity.this, Manifest.permission.CALL_PHONE)!=
-                       // PackageManager.PERMISSION_GRANTED)
-                 //   return;
-              //  startActivity(i);
 
             }
         });
@@ -62,6 +46,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         btn1.setOnClickListener(this);
         btn2.setOnClickListener(this);
         btn3.setOnClickListener(this);
+        btn4.setOnClickListener(this);
 
         String cambio1="fuentes/Best.otf";
         this.prueba=Typeface.createFromAsset(getAssets(),cambio1);
@@ -69,10 +54,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         texto1=(TextView)findViewById(R.id.txt1);
         texto1.setTypeface(prueba);
 
-
-
     }
-
     @Override
     //ONCLICK PARA MANDA A LLAMAR LOS FRAGMENTS
     public void onClick(View v) {
@@ -93,24 +75,22 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
                 break;
 
 
-            case R.id.button4:
-                fragment3 frag2=new fragment3();
+            case R.id.btnfrag3:
+                fragment3 frag3=new fragment3();
                 FragmentTransaction transition3=getSupportFragmentManager().beginTransaction();
-                transition3.replace(R.id.contenedor,frag2);
+                transition3.replace(R.id.contenedor,frag3);
                 transition3.commit();
                 break;
-
+/*
             case R.id.btnano:
                 fragment4 frag4=new fragment4();
                 FragmentTransaction transition4=getSupportFragmentManager().beginTransaction();
                 transition4.replace(R.id.contenedor, frag4);
                 transition4.commit();
                 break;
+                */
         }
     }
-
-
-
 
     @Override
     public void onFragmentInteraction(Uri uri) {

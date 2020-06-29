@@ -3,12 +3,11 @@ package com.example.fdinamicos;
 import android.content.Context;
 import android.net.Uri;
 import android.os.Bundle;
-
-import androidx.fragment.app.Fragment;
-
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+
+import androidx.fragment.app.Fragment;
 
 
 /**
@@ -25,6 +24,8 @@ public class fragment3 extends Fragment {
     private static final String ARG_PARAM1 = "param1";
     private static final String ARG_PARAM2 = "param2";
 
+
+
     // TODO: Rename and change types of parameters
     private String mParam1;
     private String mParam2;
@@ -32,6 +33,8 @@ public class fragment3 extends Fragment {
     private OnFragmentInteractionListener mListener;
 
     public fragment3() {
+
+
         // Required empty public constructor
     }
 
@@ -41,7 +44,7 @@ public class fragment3 extends Fragment {
      *
      * @param param1 Parameter 1.
      * @param param2 Parameter 2.
-     * @return A new instance of fragment fragment3.
+     * @return A new instance of fragment fragment2.
      */
     // TODO: Rename and change types and number of parameters
     public static fragment3 newInstance(String param1, String param2) {
@@ -66,7 +69,7 @@ public class fragment3 extends Fragment {
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
         // Inflate the layout for this fragment
-        return inflater.inflate(R.layout.fragment_fragment3, container, false);
+        return inflater.inflate(R.layout.fragment_fragment2, container, false);
     }
 
     // TODO: Rename method, update argument and hook method into UI event
@@ -107,4 +110,10 @@ public class fragment3 extends Fragment {
         // TODO: Update argument type and name
         void onFragmentInteraction(Uri uri);
     }
+
+
+
+
+
+
 }

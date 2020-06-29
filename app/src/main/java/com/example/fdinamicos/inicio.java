@@ -19,6 +19,6 @@ public class inicio extends AppCompatActivity {
                 startActivity(intent);
 
             }
-        }, 10000);
+        }, 9000);
     }
 }
